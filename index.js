@@ -83,7 +83,7 @@ function startTrackingLogs() {
     if (logFileUpdated && fs.existsSync(logFilePath) && fs.statSync(logFilePath).size > 0) {
       commitLogUpdates('Periodic auto-update of developer logs.');
     }
-  }, 120000); // Commit logs every 2 minutes
+  }, 3600000); // Commit logs every 1 hour
 }
 
 // Universal logging condition check
